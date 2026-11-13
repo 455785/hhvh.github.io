@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>双权限AI机器人</title>
+    <meta name="description" content="具备双权限的AI对话应用，普通用户可进行日常对话与编程答疑，开发者通过密钥验证后可在线编写并发布新功能，且能实时热同步至所有用户端。" />
+    <meta name="keywords" content="" />
+    <meta itemprop="image" content="https://job-manager-artifacts-online.cdn.bcebos.com/prod/artifacts/f43bbcab-275b-48a5-943b-9ed22f8db154/app-egd83xuzbcox_web_1789899670703.png" />
+    <meta property="og:title" content="双权限AI机器人" />
+    <meta property="og:description" content="具备双权限的AI对话应用，普通用户可进行日常对话与编程答疑，开发者通过密钥验证后可在线编写并发布新功能，且能实时热同步至所有用户端。" />
+    <meta property="og:image" content="https://job-manager-artifacts-online.cdn.bcebos.com/prod/artifacts/f43bbcab-275b-48a5-943b-9ed22f8db154/app-egd83xuzbcox_web_1789899670703.png" />
+    <meta property="og:url" content="https://app-egd83xuzbcox.miaoda.online" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="双权限AI机器人" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="双权限AI机器人" />
+    <meta name="twitter:description" content="具备双权限的AI对话应用，普通用户可进行日常对话与编程答疑，开发者通过密钥验证后可在线编写并发布新功能，且能实时热同步至所有用户端。" />
+    <meta name="twitter:image" content="https://job-manager-artifacts-online.cdn.bcebos.com/prod/artifacts/f43bbcab-275b-48a5-943b-9ed22f8db154/app-egd83xuzbcox_web_1789899670703.png" />
+    <meta name="twitter:url" content="https://app-egd83xuzbcox.miaoda.online" />
+    <meta charset="UTF-8" />
+    <link rel="icon" href="https://job-manager-artifacts-online.cdn.bcebos.com/prod/artifacts/f43bbcab-275b-48a5-943b-9ed22f8db154/app-egd83xuzbcox_web_1789899670703.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" crossorigin src="https://op-sourcecode.cdn.bcebos.com/source_code/projects/conv-egd83xuzbcow_1789899651206/assets/index-SbaqXUQE.js"></script>
+    <link rel="modulepreload" crossorigin href="https://op-sourcecode.cdn.bcebos.com/source_code/projects/conv-egd83xuzbcow_1789899651206/assets/rolldown-runtime-hePW80VL.js">
+    <link rel="stylesheet" crossorigin href="https://op-sourcecode.cdn.bcebos.com/source_code/projects/conv-egd83xuzbcow_1789899651206/assets/index-BiXLciNf.css">
+    <script>
+              (function () {
+                const redirect = new URLSearchParams(location.search).get('redirect');
+                if (redirect && redirect !== location.pathname) {
+                  history.replaceState(null, '', redirect);
+                }
+              })();
+            </script>
+    <link rel="stylesheet" id="fonts-code" href="https://miaoda-font.cdn.bcebos.com/static/font_v1/fonts-code.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script id="md-click">
+              window.mdClick = e => {
+                const target = e.target;
+                const {href, target: linkTarget} = target.dataset;
+                const appType = 'web';
+                const isBlank = linkTarget === '_blank';
+
+                if (!href) return;
+
+                e.stopPropagation();
+                e.preventDefault();
+
+                // 外部链接或新窗口打开
+                if (isBlank || href.startsWith('http')) {
+                  let finalHref = href;
+                  if (appType === 'miniapp' && !href.startsWith('http')) {
+                    finalHref = window.location.href.split('#')[0] + '#/' + href;
+                  }
+                  window.open(finalHref, linkTarget || '_self');
+                  return;
+                }
+
+                // 内部路由跳转
+                const finalHref = href.startsWith('/') ? href : '/' + href;
+                if (appType === 'miniapp') {
+                  window.location.hash = finalHref;
+                  window.dispatchEvent(new HashChangeEvent('hashchange'));
+                } else {
+                  window.history.pushState({}, '', finalHref);
+                  window.dispatchEvent(new Event('popstate'));
+                }
+              };
+              document.addEventListener('click', window.mdClick, true);
+            </script>
+    <script id="iframe-onerror-catcher">
+              const observer = new PerformanceObserver((list) => {
+                list.getEntries().forEach((entry) => {
+                  if (entry.initiatorType === 'script' && entry.responseStatus >= 400) {
+                    window.parent.postMessage({
+                      type: "RESOURCE_LOAD_ERROR",
+                      name: entry.name,
+                      status: entry.responseStatus
+                    }, "*");
+                    console.warn('[iframe-error] Resource failed:', entry.name, entry.responseStatus);
+                  }
+                });
+              });
+              observer.observe({ type: 'resource', buffered: true });
+            </script>
+  <script>
+  (function () {
+    const script = document.createElement('script');
+    script.src = 'https://resource-static.cdn.bcebos.com/runtime-inject/domain-static/online/1.0.90.1/static/miaoda-external.js?tm=' + new Date().getTime();
+    script.async = true;
+    script.onload = function () {
+      window.miaoda.init({
+        appId: 'app-egd83xuzbcox',
+        type: 'WEB',
+        share: {
+            title: "双权限AI机器人",
+            desc: "具备双权限的AI对话应用，普通用户可进行日常对话与编程答疑，开发者通过密钥验证后可在线编写并发布新功能，且能实时热同步至所有用户端。",
+            image: "https://job-manager-artifacts-online.cdn.bcebos.com/prod/artifacts/f43bbcab-275b-48a5-943b-9ed22f8db154/app-egd83xuzbcox_web_1789899670703.png"
+        }
+      });
+    };
+    document.head.appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
